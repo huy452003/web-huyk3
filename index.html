@@ -1,0 +1,553 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WEB</title>
+    <style>
+        .text-1{
+            display: flex;
+        }
+        .text-1-left{
+            margin-left: 100px;
+            width: 20%;
+            color: chartreuse;
+            font-size: 30px;
+        }
+        .text-1-right{
+            display: flex;
+            width: 80%;
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+        .text-1-right-text{
+            width: 9%;
+        }
+        .text-1-right-text-1{
+            width: 10%;
+            margin-left: -10px;
+        }
+        .text-1-right-text-2{
+            width: 10%;
+            margin-left: -23px;
+        }
+        .text-1-right-text-3{
+            width: 10%;
+            padding-left: 20px;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            color: red;
+        }
+        .text-1-right-text-input{
+            margin-top: -5px;
+            margin-left: -35px;
+            width: 10%;
+        }
+        input{
+            height: 30px;
+            border-radius: 10px;
+            border: 1px solid grey;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            padding-right: 70px;
+        }
+        .text-2{
+            margin-top: 20px;
+        }
+        .img-1{
+            width: 100%;
+            height: 400px;
+        }
+        .text-3{
+            margin-top: 25px;
+        }
+        .img-2{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 35%;
+        }
+        .text-3-1{
+            text-align: center;
+            color: grey;
+        }
+        .text-3-2{
+            display: flex;
+            width: 90%;
+            margin: auto;
+        }
+        .text-3-3{
+            width: 25%;
+            margin: auto;
+        }
+        .text-3-3-1{
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .text-3-3-2{
+            text-align: center;
+        }
+        .text-4{
+            margin-top: 30px;
+        }
+        .text-4-1{
+            margin-top: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .button-2{
+            border-radius: 10px;
+            padding: 7px 7px;
+            margin-right: 10px;
+            border: 1px solid grey;
+            background-color: white;
+        }
+        .button-2:hover{
+            background-color: chartreuse;
+        }
+        .text-4-2{
+            width: 90%;
+            margin: auto;
+        }
+        .text-4-2-top{
+            display: flex;
+            margin-left: 35px;
+        }
+        .text-4-2-bot{
+            margin-top: 35px;
+            display: flex;
+            margin-left: 35px;
+        }
+        .text-4-3{
+            width: 40%;
+            margin-right: 15px;
+        }
+        .text-4-3-2{
+            padding: 1px 100px;
+            background-color: whitesmoke;
+            text-align: center;
+        }
+        .text-4-3-2-1{
+            font-weight: bold;
+        }
+        .text-4-3-2-2{
+            margin-top: -10px;
+            font-weight: bold;
+            color: chartreuse;
+        }
+        .text-4-3-2-3{
+            color: grey;
+        }
+        .text-5-1{
+            display: flex;
+            width: 90%;
+            margin: auto;
+        }
+        .text-5-1-1{
+            background-color: lightgray;
+            width: 40%;
+            text-align: center;
+            margin: 10px 7px;
+        }
+        .text-5-1-1-1{
+            font-size: 20px;
+        }
+        .button-2-left{
+            margin-top: 240px;
+            margin-left: -10px;
+            position: absolute;
+        }
+        .button-2-right{
+            margin-top: 240px;
+            margin-left: 1330px;
+            position: absolute;
+        }
+        .button-2-1{
+            background-color: white;
+            border-radius: 99px;
+            padding: 10px 15px;
+            border: 1px solid black;
+            font-weight: bold;
+        }
+        .button-3{
+            border-radius: 20px;
+            margin-bottom: 20px;
+            background-color: lightgray;
+            font-size: 15px;
+            padding: 8px 15px;
+            font-weight: bold;
+        }
+        .img-3{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 15%;
+        }
+        .img-4{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            height: 250px;
+        }
+        .slider{
+            width: 100%;
+            overflow: hidden;
+            background-color: white;
+            position: relative;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .img-slider{
+            display: flex;
+            width: calc(200%);
+            animation: scroll 10s linear infinite;
+        }
+        .slider-images img {
+            width: 20%;
+            flex-shrink: 0;
+        }
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-20%);
+            }
+        }
+        .text-7{
+            display: flex;
+            background-color: rgb(234,228,216);
+            width: 100%;
+            padding: 60px 60px;
+            text-align: center;
+        }
+        .text-7-1{
+            margin-left: 100px;
+            font-size: 19px;
+            margin-top: 9px;
+        }
+        .text-7-2{
+            margin-left: 150px;
+            border-radius: 20px;
+            height: 40px;
+            padding-left: 30px;
+            padding-right: 110px;
+            border: none;
+            outline: none;
+        }
+        .text-7-3{
+            margin-left: -50px;
+            border-radius: 20px;
+            border: black;
+            background: rgb(172,172,68);
+            background: linear-gradient(90deg,rgba(172,172,68,1) 0%, rgba(212,147,125,1) 100%);
+            padding: 10px 16px;
+            color: white;
+        }
+        .text-7-4{
+            margin-left: 250px;
+            margin-top: 9px;
+            font-size: 19px;
+        }
+        .text-7-5{
+            margin-left: 40px;
+        }
+        .text-8{
+            display: flex;
+        }
+        .text-8-1{
+            margin-top: 25px;
+            margin-bottom: 25px;
+            margin-left: 100px;
+            width: 40%;
+        }
+        .text-8-2{
+            margin-top: 25px;
+            margin-bottom: 25px;
+            margin-left: 50px;
+            width: 25%;
+        }
+        .text-8-3{
+            margin-top: 25px;
+            margin-bottom: 25px;
+            width: 35%;
+        }
+        .text-8-line{
+            line-height: 1.5;
+        }
+        .text-9{
+            background-color: rgb(234,228,216);
+            padding: 15px 15px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: -40px;
+        }
+        .scrollTop{
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 70px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-1">
+        <div class="text-1-left"><img src="1.1.jpg"></div>
+        <div class="text-1-right">
+            <div class="text-1-right-text"><a href="#">Trang Chủ</a></div>
+            <div class="text-1-right-text"><a href="#">Giới Thiệu</a></div>
+            <div class="text-1-right-text"><a href="#">Sản Phẩm</a></div>
+            <div class="text-1-right-text"><a href="#">Tin Tức</a></div>
+            <div class="text-1-right-text-1"><a href="#">Chia Sẻ</a></div>
+            <div class="text-1-right-text-2"><a href="#">Thư Viện Ảnh</a></div>
+            <div class="text-1-right-text-3"><a href="#">Liên Hệ</a></div>
+            <div class="text-1-right-text-input"><input type="text" placeholder="Nhập từ khóa tìm kiếm...." ></div>
+        </div>
+    </div>
+
+    <div class="text-2">
+        <img class="img-1" src="1.jpg">
+    </div>
+
+    <div class="text-3">
+        <img class="img-2" src="0.jpg">
+        <p class="text-3-1">Hiện tại vùng nguyên liệu của chúng tôi có thể cung
+            cấp các thực tập tươi sạch với số lượng lớn vì đang vào mùa thu hoạch nên chúng toiong có thể cung<br>
+            ứng cho tất cả các đối tác xuất khẩu nông sản trên cả nước
+        </p>
+        <div class="text-3-2">
+            <div class="text-3-3">
+                <br>
+                <br>
+                <img class="img-2" src="2.jpg">
+                <p class="text-3-3-1">Trang trại hữu cơ</p>
+                <p class="text-3-3-2">Cung cấp 100% thực phẩm sạch đảm bảo an toàn <br> và ngon nhất</p>
+            </div>
+            <div class="text-3-3">
+                <br>
+                <br>
+                <img class="img-2" src="2.jpg">
+                <p class="text-3-3-1">Thực phẩm sạch</p>
+                <p class="text-3-3-2">Cung cấp 100% thực phẩm sạch đảm bảo an toàn <br> và ngon nhất</p>
+            </div>
+            <div class="text-3-3">
+                <br>
+                <br>
+                <img class="img-2" src="2.jpg">
+                <p class="text-3-3-1">An toàn sinh học</p>
+                <p class="text-3-3-2">Cung cấp 100% thực phẩm sạch đảm bảo an toàn <br> và ngon nhất</p>
+            </div>
+            <div class="text-3-3">
+                <br>
+                <img class="img-2" src="2.jpg">
+                <p class="text-3-3-1">Đa dạng sinh học</p>
+                <p class="text-3-3-2">Cung cấp 100% thực phẩm sạch đảm bảo an toàn <br> và ngon nhất</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-4">
+        <img class="img-2" src="3.1.jpg">
+        <div class="text-4-1">
+            <button class="button-2">Rau quả</button>
+            <button class="button-2">Trái Cây</button>
+            <button class="button-2">Hải Sản</button>
+            <button class="button-2">Thực Phẩm Tươi Sống</button>
+            <button class="button-2">Các Loại Hạt</button>
+        </div>
+
+        <div class="text-4-2">
+            <div class="text-4-2-top">
+                <div class="text-4-3">
+                    <div class="text-4-3-1"><img class="img-2" src="3.jpg"></div>
+                    <div class="text-4-3-2">
+                        <p class="text-4-3-2-1">Súp lơ trắng</p>
+                        <p class="text-4-3-2-2">20.000<sup>đ</sup> <del class="text-4-3-2-3">25.000 <sup>đ</sup></del> </p>
+                    </div>
+                </div>
+                <div class="text-4-3">
+                    <div class="text-4-3-1"><img class="img-2" src="3.jpg"></div>
+                    <div class="text-4-3-2">
+                        <p class="text-4-3-2-1">Rau Cải Xanh</p>
+                        <p class="text-4-3-2-2">20.000<sup>đ</sup> <del class="text-4-3-2-3">25.000 <sup>đ</sup></del> </p>
+                    </div>
+                </div>
+                <div class="text-4-3">
+                    <div class="text-4-3-1"><img class="img-2" src="3.jpg"></div>
+                    <div class="text-4-3-2">
+                        <p class="text-4-3-2-1">Rau Mồng Tơi</p>
+                        <p class="text-4-3-2-2">20.000<sup>đ</sup> <del class="text-4-3-2-3">25.000 <sup>đ</sup></del> </p>
+                    </div>
+                </div>
+                <div class="text-4-3">
+                    <div class="text-4-3-1"><img class="img-2" src="3.jpg"></div>
+                    <div class="text-4-3-2">
+                        <p class="text-4-3-2-1">Rau Dền</p>
+                        <p class="text-4-3-2-2">20.000<sup>đ</sup> <del class="text-4-3-2-3">25.000 <sup>đ</sup></del> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-4-2-bot">
+                <div class="text-4-3">
+                    <div class="text-4-3-1"><img class="img-2" src="3.jpg"></div>
+                    <div class="text-4-3-2">
+                        <p class="text-4-3-2-1">Rau Cải</p>
+                        <p class="text-4-3-2-2">20.000<sup>đ</sup> <del class="text-4-3-2-3">25.000 <sup>đ</sup></del> </p>
+                    </div>
+                </div>
+                <div class="text-4-3">
+                    <div class="text-4-3-1"><img class="img-2" src="/3.jpg"></div>
+                    <div class="text-4-3-2">
+                        <p class="text-4-3-2-1">Rau Muống</p>
+                        <p class="text-4-3-2-2">20.000<sup>đ</sup> <del class="text-4-3-2-3">25.000 <sup>đ</sup></del> </p>
+                    </div>
+                </div>
+                <div class="text-4-3">
+                    <div class="text-4-3-1"><img class="img-2" src="3.jpg"></div>
+                    <div class="text-4-3-2">
+                        <p class="text-4-3-2-1">Rau Dền Đỏ</p>
+                        <p class="text-4-3-2-2">20.000<sup>đ</sup> <del class="text-4-3-2-3">25.000 <sup>đ</sup></del> </p>
+                    </div>
+                </div>
+                <div class="text-4-3">
+                    <div class="text-4-3-1"><img class="img-2" src="3.jpg"></div>
+                    <div class="text-4-3-2">
+                        <p class="text-4-3-2-1">Rau Chèm Ngay</p>
+                        <p class="text-4-3-2-2">20.000<sup>đ</sup> <del class="text-4-3-2-3">25.000 <sup>đ</sup></del> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-5">
+        <br>
+        <br>
+        <br>
+        <img class="img-3" src="4.1.jpg">
+        <br>
+        <div class="text-5-1">
+            <div class="button-2-left">
+                <button class="button-2-1"> < </button>
+            </div>
+
+            <div class="text-5-1-1">
+                <img class="img-4" src="4.jpg">
+                <br>
+                <b class="text-5-1-1-1">5 bí quyết chọn Sơn nội thất cao cấp</b>
+                <br>
+                <p>Với những băn khoăn về việc lựa chọn đèn trang trí, đặc biệt <br>
+                là đèn thả bàn ăn như thế nào cho đẹp bởi có quá nhiều sự <br>
+                lựa...</p>
+                <br>
+                <button class="button-3"> Xem thêm >></button>
+            </div>
+            <div class="text-5-1-1">
+                <img class="img-4" src="4.jpg">
+                <br>
+                <b class="text-5-1-1-1">Những mẫu phòng ngủ cực mát trong mùa hè</b>
+                <br>
+                <p>Với những băn khoăn về việc lựa chọn đèn trang trí, đặc biệt <br>
+                    là đèn thả bàn ăn như thế nào cho đẹp bởi có quá nhiều sự <br>
+                    lựa...</p>
+                <br>
+                <button class="button-3"> Xem thêm >></button>
+            </div>
+            <div class="text-5-1-1">
+                <img class="img-4" src="4.jpg">
+                <br>
+                <b class="text-5-1-1-1">Màu sơn phù hợp với gia chủ mệnh Hỏa</b>
+                <br>
+                <p>Với những băn khoăn về việc lựa chọn đèn trang trí, đặc biệt <br>
+                    là đèn thả bàn ăn như thế nào cho đẹp bởi có quá nhiều sự <br>
+                    lựa...</p>
+                <br>
+                <button class="button-3"> Xem thêm >></button>
+            </div>
+
+            <div class="button-2-right">
+                <button class="button-2-1"> > </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-6">
+        <br>
+        <img class="img-3" src="5.1.jpg">
+        <br>
+        <div class="slider">
+            <div class="img-slider">
+                <img src="5.jpg">
+                <img src="5.2.jpg">
+                <img src="5.3.jpg">
+                <img src="5.4.jpg">
+                <img src="5.5.jpg">
+
+                <img src="5.jpg">
+                <img src="5.2.jpg">
+                <img src="5.3.jpg">
+                <img src="5.4.jpg">
+                <img src="5.5.jpg">
+
+                <img src="5.jpg">
+                <img src="5.2.jpg">
+                <img src="5.3.jpg">
+                <img src="5.4.jpg">
+                <img src="5.5.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="text-7">
+        <b class="text-7-1">ĐĂNG KÝ NHẬN TIN</b>
+        <input class="text-7-2" type="text" placeholder="Nhập địa chỉ Email">
+        <button class="text-7-3">ĐĂNG KÝ</button>
+        <b class="text-7-4">THEO DÕI</b>
+        <img class="text-7-5" src="7.jpg">
+    </div>
+
+    <div class="text-8">
+        <div class="text-8-1">
+            <h4>ORGANNIC PAGE</h4>
+            <p class="text-8-line">
+            Địa chỉ: 48E, Thạnh Xuân 25, Phường Thạnh Xuân, Quận 12, TP.Hồ Chí Minh <br>
+            Điện thoại: 0965 297 769 <br>
+            Email: nongsan24h@gmail.com <br>
+            Website: nongsan24h.com</p>
+        </div>
+        <div class="text-8-2">
+            <h4>CHÍNH SÁCH & QUY ĐỊNH</h4>
+            <b class="text-8-line">
+                Chính sách vận chuyển <br>
+                Chính sách bán hàng <br>
+                Chính sách đổi trả <br>
+                Giải quyết khiếu nại
+            </b>
+        </div>
+        <div class="text-8-3">
+            <h4>FANPAGE</h4>
+            <a href="https://www.facebook.com/giaiphap24h/"> <img src="8.jpg"></a>
+        </div>
+    </div>
+
+    <div class="text-9">
+        Coyyright @ 2019 nongsan24h.com | Thiết kế website: Giải pháp 24 Giờ
+    </div>
+
+    <img class="scrollTop" src="5.jpg" onclick="scrollToTop()">
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
